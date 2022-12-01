@@ -1,0 +1,28 @@
+<snippet>
+	<content><![CDATA[
+! --- default ---
+en
+conf t
+banner motd ${1:#ab in die medt#}
+username ${2:cisco} password ${3:cisco}
+username ${2} priv 15
+enable secret ${4:cisco}
+service password encryption
+no ip domain-lookup
+ip domain name ${5:medt.at}
+crypto key gen rsa mod 2048
+ip ssh version 2
+line vty 0 15
+login local
+logging sync
+transport input ssh
+exit
+line con 0
+login local
+logging sync
+exit
+
+]]></content>
+	<!-- Optional: Set a tabTrigger, defines when to trigger the snippet -->
+	<tabTrigger>default</tabTrigger>
+</snippet>

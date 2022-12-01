@@ -1,0 +1,41 @@
+<snippet>
+	<content><![CDATA[
+! --- Zone Based Firewall ---
+zone secu ${1:[Name]}
+zone secu ${2:[Name]}
+
+int ${3:[Int]}
+zone sec ${1}
+exit
+
+int ${4:[Int]}
+zone sec ${2}
+exit
+
+! --- ${1} 2 ${2} ---
+ip access-list extended ${1}-2-${2}-access
+permit ${5:[Protocol]} ${6:[Source wildcard|any]} ${7:[Destination wildcard|any]} eq ${8:[Port]}
+1000 deny ip any any
+exit
+
+class-map type inspect match-all ${1}-2-${2}-classmap
+match access-group name ${1}-2-${2}-access
+exit
+
+policy-map type inspect ${1}-2-${2}-policy
+class ${1}-2-${2}-classmap
+pass
+exit
+class class-default
+drop log
+exit
+exit
+
+zone-pair security ${1}-2-${2} source ${1} dest ${2}
+service-policy type inspect ${1}-2-${2}-policy
+exit
+
+]]></content>
+	<!-- Optional: Set a tabTrigger, defines when to trigger the snippet -->
+	<tabTrigger>zbfw</tabTrigger>
+</snippet>

@@ -1,0 +1,7 @@
+<snippet>
+	<content><![CDATA[
+ 0.0.0.255
+]]></content>
+	<!-- Optional: Set a tabTrigger, defines when to trigger the snippet -->
+	<tabTrigger>/24</tabTrigger>
+</snippet>

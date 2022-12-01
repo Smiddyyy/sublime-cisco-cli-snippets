@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+int ${1:[Int]}
+ip add ${2:[Address]} ${3:255.255.255.0}
+descr ${4:[Descr]}
+no shutdown 
+exit
+
+]]></content>
+	<!-- Optional: Set a tabTrigger, defines when to trigger the snippet -->
+	<tabTrigger>int</tabTrigger>
+</snippet>

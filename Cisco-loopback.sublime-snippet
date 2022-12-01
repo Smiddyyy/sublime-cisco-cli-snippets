@@ -1,0 +1,10 @@
+<snippet>
+	<content><![CDATA[
+int lo ${1:[Nr]}
+ip address ${2:[Address]} ${3:255.255.255.255}
+exit
+ 
+]]></content>
+	<!-- Optional: Set a tabTrigger, defines when to trigger the snippet -->
+	<tabTrigger>lo</tabTrigger>
+</snippet>

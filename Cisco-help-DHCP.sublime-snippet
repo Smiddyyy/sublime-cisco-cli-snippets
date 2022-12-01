@@ -1,0 +1,21 @@
+<snippet>
+	<content><![CDATA[
+! --- DHCP Helper ---
+! -- POOL
+!ip dhcp pool [Name]
+!network [Network Address] [Mask]
+!dns-server [Address]
+!default-router [Address]
+!exit
+!
+!ip dhcp excluded-address [Address]
+!
+! -- ACL 
+!ip access-list extended [Name]
+!permit udp any host 255.255.255.255 eq 67 68
+!<other rules>
+
+]]></content>
+	<!-- Optional: Set a tabTrigger, defines when to trigger the snippet -->
+	<tabTrigger>help</tabTrigger>
+</snippet>

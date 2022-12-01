@@ -1,0 +1,18 @@
+<snippet>
+	<content><![CDATA[
+int tun ${1:[Nr]}
+ip add ${2:[Address]} ${3:[Mask]}
+tunnel source ${4:[Src]}
+tunnel mode gre multi
+tunnel key ${5:1}
+ip nhrp network-id ${6:1}
+ip nhrp map multi dynamic
+ip nhrp redirect
+ip ospf network point-to-multipoint
+no shut
+exit
+
+]]></content>
+	<!-- Optional: Set a tabTrigger, defines when to trigger the snippet -->
+	<tabTrigger>tun</tabTrigger>
+</snippet>

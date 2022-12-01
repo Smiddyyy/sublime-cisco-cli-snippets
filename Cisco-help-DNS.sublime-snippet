@@ -1,0 +1,16 @@
+<snippet>
+	<content><![CDATA[
+! --- DNS Helper ---
+! -- dns-server
+!ip dns server
+!ip domain-lookup
+!ip host [Name] [Ip]
+!
+! -- dns-client
+!ip domain-lookup
+!ip name-server [Address]
+
+]]></content>
+	<!-- Optional: Set a tabTrigger, defines when to trigger the snippet -->
+	<tabTrigger>help</tabTrigger>
+</snippet>

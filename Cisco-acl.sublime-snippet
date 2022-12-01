@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+ip access-list extended ${1:NAME} 
+permit ${2:[Protocol]} ${3:[Source wildcard|any]} ${4:[Destination wildcard|any]} eq ${5:[Port]}
+1000 deny ip any any
+exit
+
+]]></content>
+	<!-- Optional: Set a tabTrigger defines when to trigger the snippet -->
+	<tabTrigger>acl</tabTrigger>
+</snippet>

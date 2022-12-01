@@ -1,0 +1,11 @@
+<snippet>
+	<content><![CDATA[
+! --- SYSLOG Helper ---
+!logging on
+!logging [Address]
+!logging trap [Level]
+
+]]></content>
+	<!-- Optional: Set a tabTrigger, defines when to trigger the snippet -->
+	<tabTrigger>help</tabTrigger>
+</snippet>

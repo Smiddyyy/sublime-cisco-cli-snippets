@@ -1,0 +1,12 @@
+<snippet>
+	<content><![CDATA[
+router bgp ${1:[AS]}
+neighbor ${2:[Ip]} remote-as ${3:[AS]}
+neighbor ${2} update-source ${4:[Int]}
+network ${5:[Network]} mask ${6:[Mask]}
+exit
+
+]]></content>
+	<!-- Optional: Set a tabTrigger, defines when to trigger the snippet -->
+	<tabTrigger>bgp</tabTrigger>
+</snippet>

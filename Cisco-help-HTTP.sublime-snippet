@@ -1,0 +1,13 @@
+<snippet>
+	<content><![CDATA[
+! --- HTTP Helper ---
+!ip http server
+!ip http secure-server
+!ip http port [Port | 80]
+!ip http secure-port [Port | 443]
+!ip http auth local
+
+]]></content>
+	<!-- Optional: Set a tabTrigger, defines when to trigger the snippet -->
+	<tabTrigger>help</tabTrigger>
+</snippet>
