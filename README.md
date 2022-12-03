@@ -3,7 +3,7 @@
 Sublime Text Cisco-Cli Snippets. Includes various routing/firewall configurations. For Cisco Router ISO '1562.T'.
 
 ## Installing
-Clone the repository into Sublime Text "Packages/Cisco" directory (Preferences -> Browse packages):
+Clone the repository into Sublime Text "Packages" directory (Preferences -> Browse packages):
 	```
     	git clone git@github.com:Smiddyyy/sublime-cisco-cli-snippets.git
 	```
