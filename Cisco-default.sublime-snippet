@@ -1,6 +1,6 @@
 <snippet>
 	<content><![CDATA[
-! --- default ---
+! --- ${1:[Name]} ---
 en
 conf t
 hostname ${1:[Name]}
