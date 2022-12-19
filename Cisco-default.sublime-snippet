@@ -8,7 +8,7 @@ banner motd ${2:#ab in die medt#}
 username ${3:cisco} password ${4:cisco}
 username ${3} priv 15
 enable secret ${5:cisco}
-service password encryption
+service password-encryption
 no ip domain-lookup
 ip domain name ${6:medt.at}
 crypto key gen rsa mod 2048
