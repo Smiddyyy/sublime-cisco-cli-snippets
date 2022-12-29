@@ -1,9 +1,11 @@
 <snippet>
 	<content><![CDATA[
 router bgp ${1:[AS]}
-neighbor ${2:[Ip]} remote-as ${3:[AS]}
-neighbor ${2} update-source ${4:[Int]}
-network ${5:[Network]} mask ${6:[Mask]}
+bgp router-id ${2:[Id]}
+neighbor ${3:[Ip]} remote-as ${4:[AS]}
+neighbor ${3} update-source ${5:[Int]}
+neighbor ${3} password ${6:[Password]}
+network ${7:[Network]} mask ${8:[Mask]}
 exit
 
 ]]></content>

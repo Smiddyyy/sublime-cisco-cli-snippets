@@ -1,0 +1,17 @@
+<snippet>
+	<content><![CDATA[
+router bgp ${1:[AS]}
+bgp router-id ${2:[Id]}
+neighbor ${3:[Ip]} remote-as ${4:[AS]}
+neighbor ${3} update-source ${5:[Int]}
+neighbor ${3} password ${6:[Password]}
+network ${7:[Network]} mask ${8:[Mask]}
+no auto-summary
+address-family vpnv4
+	neighbor ${3} activate
+exit
+
+]]></content>
+	<!-- Optional: Set a tabTrigger, defines when to trigger the snippet -->
+	<tabTrigger>bgp </tabTrigger>
+</snippet>
