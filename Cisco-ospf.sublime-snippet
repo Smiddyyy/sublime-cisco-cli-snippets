@@ -1,7 +1,7 @@
 <snippet>
 	<content><![CDATA[
 router ospf ${1:[Nr]}
-area ${2:0} mes
+area ${2:0} auth mes
 network ${3:[Network]} ${4:0.0.0.255} area ${2:0}
 network ${5:[Network]} ${6:0.0.0.255} area ${2:0}
 exit
